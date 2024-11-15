@@ -11,6 +11,14 @@ namespace PetStoreApp.Models
         public int Id { get; set; }
         public string Kategorie { get; set; }
         public int MnozstviNaSklade { get; set; }
-        public decimal Cena { get; set; }
+        public double Cena { get; set; }
+
+        public Zbozi(int id, string kategorie, int mnozstvi, double cena)
+        {
+            Id = id;
+            Kategorie = kategorie;
+            MnozstviNaSklade = mnozstvi;
+            Cena = cena;
+        }
     }
 }
